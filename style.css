@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?семья=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+
+}
+.menu {
+	background: black;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.nav {
+	float: right;
+}
+.nav-item {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	line-height: 50px ;
+}
+.hat {
+	height: 100vh;
+	background: linear-gradient(#DB7E7E , #FFC997);
+	overflow: hidden;
+}
+.main {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+}
+.main_head {
+	font-size: 100px;
+	text-shadow: 10px 10px 0 #E06161;
+	color: white;
+}
+.main_btn {
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	box-shadow: 10px 10px 0 #E06161;
+	background: white;
+	text-decoration: none;
+	border-radius: 20px;
+	width: 200px;
+	height: 45px;
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+	line-height: 45px;
+}
+.main_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.circle1 {
+	position: absolute;
+	top: -40px;
+	left: 0%;
+	z-index: 1;
+	animation: up-left 10s infinite;
+}
+.circle2 {
+	position: absolute;
+	top: -30px;
+	right: 0%;
+	z-index: 2;
+	animation: up-right 10s infinite;
+}
+.circle3 {
+	position: absolute;
+	bottom: -8%;
+	left: -8%;
+	animation: up-left 10s infinite;
+}
+.circle4 {
+	position: absolute;
+	bottom: -2%;
+	left: 15%;
+	animation: right 10s infinite;
+}
+.circle5 {
+	position: absolute;
+	bottom: -15%;
+	right: -3%;
+	animation: rotate 10s infinite;
+}
+.octagon {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	animation: left 10s infinite;
+}
+.triangle {
+	position: absolute ;
+	top: 25%;
+	left: 38%;
+	animation: left 10s infinite;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.about {
+}
+.doing {
+	background: linear-gradient(7deg,#DB7E7E , #FFC997 75%,white 75%);
+
+}
+.doing_text {
+	background: white;
+	border-radius: 15px;
+	box-shadow: 10px 10px 3px #E06161;
+	padding: 20px 30px;
+}
+.services {
+background: linear-gradient(170deg,#DB7E7E 50%,white 50%);
+}
+.title {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.obertka {
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+}
+
+.doing-img {
+	width: 100%;
+	margin-left: 30px;
+}
+.card {
+	background: white;
+	border: 5px solid #FFC997;
+	width: 24%;
+	height: 350px;
+	border-radius: 20px;
+	text-align: center;
+	padding: 15px;
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+}
+.horoshi-card {
+	background: white;
+	border: 5px solid #FFC997;
+	width: 750px;
+	height: 75px;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 10px;
+	display: inline-block;
+	box-shadow: 10px 10px 3px #E06161;
+}
+.right-card {
+	margin-left: 100px;
+}
+.list {
+	margin-left: 15px;
+}
+.por1 {
+	width: 47%;
+	margin: 5px;
+	border-radius: 15px;
+	border: 5px solid #E06161;
+	transition: 1s;
+}
+.por1:hover {
+	transform: scale(1.1);
+}
+.contact-us {
+	background: linear-gradient(#DB7E7E , #FFC997);
+}
+@keyframes left {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(70px,0px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+@keyframes up-left {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(22px,22px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+@keyframes up-right {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(-22px,32px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+@keyframes right {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(300px,0px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+@media (max-width:768px) {
+	.logo{
+		width: 80px;
+	}
+	.nav-item {
+		display: block;
+	}
+	.main_head {
+		font-size: 40px;
+		text-align: center;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.text-about {
+		font-size: 16px;
+	}
+	.obertka {
+		display: block;
+		width: 100%;
+	}
+	.card {
+		display: block;
+		width: 80%;
+	}
+	.container {
+		width: 80vw;
+		position: relative;
+	}
+	.horoshi-card {
+		display: block;
+		width: 80%;
+		margin-left: 0;
+		height: auto;
+		margin-bottom: 30px;
+	}
+	.por1 {
+		display: block;
+		width: 100%;
+	}
+}
